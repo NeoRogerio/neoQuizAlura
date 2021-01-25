@@ -11,6 +11,9 @@ export default function IndexPage() {
             <meta property="og:image:type" content="image/jpg" />
             <meta property="og:image:width" content="800" />
             <meta property="og:image:height" content="600" />
+
+            <meta property="twitter:card" content="sumary" />
+            <meta property="twitter:creator" content="@neorogerio" />
         </Head>
     )
 }
