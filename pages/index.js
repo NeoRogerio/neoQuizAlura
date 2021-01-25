@@ -1,9 +1,10 @@
 import styled from 'styled-components'
-import db from '../db.json';
+import db from '../db.json'
 import Widget from '../src/components/Widget'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import QuizLogo from '../src/components/QuizLogo'
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -20,12 +21,13 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Título do Quiz</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Descrição do quiz</p>
+            <p>{db.description}</p>
           </Widget.Content>
         </Widget>
 
@@ -39,7 +41,7 @@ export default function Home() {
 
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/NeoRogerio" />
+      <GitHubCorner projectUrl="https://github.com/NeoRogerio/neoQuizAlura" />
     </QuizBackground>
   )
 }
