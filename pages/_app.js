@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
         <meta property="twitter:creator" content="@neorogerio" />
         <meta property="twitter:image" content={db.bg} />
 
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABEByAHnCdgCm8KMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAABEAAAASIRERIhAAASESIiIRIQABEiISEiIRAAEjEzMzEyEAATMTMzMTMQABMzIjMzMxABITMiMzMxIQEhMzMyMzEhABEyERESMRAAEhEiIiESEAASIiIiIiIQAAEiIjIiIQAAABEjMyEQAAAAABIyEAAAAAAAAREAAADz5wAA4AMAAMABAADAAQAAwAEAAMABAADAAQAAgAAAAIAAAADAAQAAwAEAAMABAADgAwAA8AcAAPwfAAD+PwAA" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet" />
