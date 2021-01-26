@@ -43,8 +43,10 @@ export default function Home() {
                   setName(infosDoEvento.target.value);
                 }}
                 placeholder="Diz aí seu nome"
+                value={name}
               />
               <button type="submit" disabled={name.length === 0}>
+                {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
                 Vamos lá {name}?
               </button>
             </form>
