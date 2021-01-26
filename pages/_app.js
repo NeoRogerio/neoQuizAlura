@@ -34,9 +34,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name="title" content="Quiz Franquia Pokémon" />
-        <meta name="description" content="Teste seus conhecimentos sobre a franquia de monstros de bolso mais famosa do mundo." />
-
+        <title>Alura Quiz - Franquia Pokémon</title>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://pokemon-quiz.neorogerio.vercel.app/" />
         <meta property="og:title" content="Quiz Franquia Pokémon" />
