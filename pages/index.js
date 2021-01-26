@@ -1,11 +1,13 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/components/Widget'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import QuizLogo from '../src/components/QuizLogo'
-import Header from '../src/components/Header'
+import React from 'react';
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
+
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizLogo from '../src/components/QuizLogo';
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -19,9 +21,10 @@ const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Header />
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -30,6 +33,21 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <input
+                onChange={function (infosDoEvento) {
+                  setName(infosDoEvento.target.value);
+                }}
+                placeholder="Diz aí seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Vamos lá {name}?
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
@@ -45,5 +63,5 @@ export default function Home() {
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/NeoRogerio/neoQuizAlura" />
     </QuizBackground>
-  )
+  );
 }

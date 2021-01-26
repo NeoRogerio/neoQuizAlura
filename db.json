@@ -32,9 +32,10 @@
     "theme": {
         "colors": {
             "primary": "#4caf50",
-            "secondary": "#ffea00",
+            "secondary": "#00a0b2",
             "mainBg": "#124116",
             "contrastText": "#FFFFFF",
+            "disabled": "#979797",
             "wrong": "#FF5722",
             "success": "#4CAF50"
         },

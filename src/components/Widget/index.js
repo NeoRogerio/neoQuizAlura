@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
@@ -9,13 +9,13 @@ const Widget = styled.div`
   overflow: hidden;
 
   h1, h2, h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1;
   }
@@ -44,6 +44,32 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+  input {
+    font-family: 'Londrina Solid', sans-serif;
+    color: ${({ theme }) => theme.colors.contrastText};
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 7px 15px;
+    border: 1px solid ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.mainBg};
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  button {
+    font-family: 'Londrina Solid', sans-serif;
+    color: ${({ theme }) => theme.colors.contrastText};
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    background-color: ${({ theme }) => theme.colors.secondary};
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  button:disabled {
+    background-color: ${({ theme }) => theme.colors.disabled};
   }
 `;
 
