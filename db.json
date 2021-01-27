@@ -4,25 +4,27 @@
     "description": "Teste seus conhecimentos sobre a franquia de monstros de bolso mais famosa do mundo. Quiz baseado na aula de Imersão React da Alura!",
     "questions": [
         {
-          "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-          "title": "Como fazer um seletor por id via CSS?",
-          "description": "Essa é pra aquecer",
-          "answer": 2,
+          "image": "https://media1.tenor.com/images/9515ab36d4858a6c135af3310499eddf/tenor.gif",
+          "title": "Qual Pokémon é conhecido por carregar um alho-poró?",
+          "description": "",
+          "answer": 0,
           "alternatives": [
-            ".elemento",
-            "*elemento",
-            "#elemento",
-            "%elemento"
+            "Farfetch'd",
+            "Mr.Mime",
+            "Jynx",
+            "Fearow"
           ]
         },
         {
           "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-          "title": "Como fazer um background gradiente com css?",
+          "title": "Nos jogos originais e nas primeiras temporadas do anime, o que as cidades têm em comum?",
           "description": "Faz tempo em haha",
           "answer": 0,
           "alternatives": [
-             "background: linear-gradient(#e66465, #9198e5);",
-             "background: gradient(#e66465, #9198e5);"
+             "Cada uma delas tem um ginásio Pokémon",
+             "Elas têm nomes de cores",
+             "Elas têm o nome de Pokémon",
+             "Elas são baseadas na mitologia"
           ]
         }
       ],
