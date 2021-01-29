@@ -29,7 +29,8 @@
         }
       ],
       "external": [
-        ""
+        "https://aluraquizpokemon.cesarrobertopg.vercel.app/",
+        "https://chessquiz-alura.leo0liveira.vercel.app/"
       ],
     "theme": {
         "colors": {
