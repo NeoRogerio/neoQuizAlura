@@ -65,4 +65,20 @@ Widget.Topic = styled.a`
   }
 `;
 
+Widget.Result = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  display: block;
+  &[data-status="SUCCESS"] {
+    background-color: ${({ theme }) => theme.colors.success};
+  }
+  &[data-status="ERROR"] {
+    background-color: ${({ theme }) => theme.colors.wrong};
+  }
+`;
+
 export default Widget;

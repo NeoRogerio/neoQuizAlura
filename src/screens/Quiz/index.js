@@ -1,6 +1,8 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useRouter } from 'next/router';
+import Lottie from 'react-lottie';
 
 import QuizBackground from '../../components/QuizBackground';
 import Widget from '../../components/Widget';
@@ -11,42 +13,32 @@ import GitHubCorner from '../../components/GitHubCorner';
 import Button from '../../components/Button';
 import AlternativesForm from '../../components/AlternativeForm';
 import BackLinkArrow from '../../components/BackLinkArrow';
-
-//  import db from '../../../db.json';
+import loadingAnimation from '../../components/Animations/loading.json';
 
 function ResultWidget({ results }) {
+  const router = useRouter();
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado
+        <BackLinkArrow href="/" />
+        <h3>
+          Tela de Resultado
+        </h3>
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          Você acertou
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
+          {`Parabéns ${router.query.name}! Você acertou ${results.filter((x) => x).length} perguntas.`}
         </p>
         <ul>
           {results.map((result, index) => (
-            <li key={`result__${result}`}>
-              #
-              {index + 1}
-              {' '}
-              Resultado:
-              {result === true
-                ? 'Acertou'
-                : 'Errou'}
-            </li>
+            <Widget.Result
+              as="label"
+              key={`result__${result}`}
+              data-status={result ? 'SUCCESS' : 'ERROR'}
+            >
+              {`Questão #${index + 1}: ${result === true ? 'Acertou' : 'Errou'}`}
+            </Widget.Result>
           ))}
         </ul>
       </Widget.Content>
@@ -61,8 +53,13 @@ function LoadingWidget() {
         Carregando...
       </Widget.Header>
 
-      <Widget.Content>
-        [Desafio do Loading]
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          options={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -120,7 +117,7 @@ function QuestionWidget({
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
-            const alternativeId = `alternative__${alternativeIndex}`;
+            const alternativeId = `alternative__${questionIndex + 1}__${alternativeIndex}`;
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === alternativeIndex;
             return (
@@ -145,8 +142,8 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && isCorrect && <p>CORRETO!</p>}
+          {isQuestionSubmited && !isCorrect && <p>ERRADO!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -176,7 +173,7 @@ export default function QuizPage({ externalQuestions }) {
   React.useEffect(() => {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 + 1000);
+    }, 1 + 2000);
   }, []);
 
   function handleSubmitQuiz() {

@@ -16,9 +16,9 @@
           ]
         },
         {
-          "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+          "image": "https://38.media.tumblr.com/tumblr_lnou42XfHy1qmnmf3o1_400.gif",
           "title": "Nos jogos originais e nas primeiras temporadas do anime, o que as cidades têm em comum?",
-          "description": "Faz tempo em haha",
+          "description": "",
           "answer": 1,
           "alternatives": [
              "Cada uma delas tem um ginásio Pokémon",
@@ -26,9 +26,106 @@
              "Elas têm o nome de Pokémon",
              "Elas são baseadas na mitologia"
           ]
+        },
+        {
+          "image": "https://pm1.narvii.com/6291/653c2bab6d04614184bbb79bcf50cd0bfa26e309_hq.jpg",
+          "title": "Qual destes Pokémon se parece muito com um plesiossauro?",
+          "description": "",
+          "answer": 2,
+          "alternatives": [
+             "Omanyte",
+             "Aerodactyl",
+             "Lapras",
+             "Scyther"
+          ]
+        },
+        {
+          "image": "https://31.media.tumblr.com/e3c3799cdfe0257c92fdc9f6d5455e27/tumblr_mr8pjgTx9D1s5h198o1_400.gif",
+          "title": "Qual desses Pokémon NÃO é do tipo elétrico?",
+          "description": "",
+          "answer": 0,
+          "alternatives": [
+             "Porygon",
+             "Voltorb",
+             "Zapdos",
+             "Plusle"
+          ]
+        },
+        {
+          "image": "https://cdn.dribbble.com/users/609665/screenshots/2964691/pokemon-badges__1_.gif",
+          "title": "Como os treinadores Pokémon ganham insígnias?",
+          "description": "",
+          "answer": 1,
+          "alternatives": [
+             "Participando de 100 batalhas",
+             "Derrotando Líderes de Ginásio",
+             "Coletando todos os Pokémon de certo tipo",
+             "Trocando Pokémon com outro treinador"
+          ]
+        },
+        {
+          "image": "https://2.bp.blogspot.com/-92kNx0GwnoM/WdYaEFnEB5I/AAAAAAAABk8/TbBRN3bR654WaGwDWSzi9WJn1zTLlhtIgCLcBGAs/s1600/pokemon.gif",
+          "title": "Em Pokémon Go, qual destes Pokémon só pode ser capturado na Europa?",
+          "description": "",
+          "answer": 3,
+          "alternatives": [
+             "Tauros",
+             "Farfetch'd",
+             "Kangaskhan",
+             "Mr.Mime"
+          ]
+        },
+        {
+          "image": "https://media1.tenor.com/images/f8a081ca56ce0fff342eab22f3e63fd8/tenor.gif",
+          "title": "Os jogos Pokémon geralmente começam com o usuário escolhendo entre três “Pokémon iniciais”. Qual destes é o trio correto de iniciantes encontrado em Pokémon Gold e Silver?",
+          "description": "",
+          "answer": 2,
+          "alternatives": [
+             "Bulbasaur, Charmander, Squirtle",
+             "Treecko, Torchic, Mudkip",
+             "Chikorita, Cyndaquil, Totodile",
+             "Snivy, Tepig, Oshawott"
+          ]
+        },
+        {
+          "image": "https://i.pinimg.com/originals/01/4c/57/014c5762c97dbb19b8b2e02b72f63509.gif",
+          "title": "O que Togepi, Cleffa, Magby e Bonsly têm em comum?",
+          "description": "",
+          "answer": 0,
+          "alternatives": [
+             "Eles são todos Pokémon bebês",
+             "Eles são todos Pokémon lendários",
+             "Eles não evoluem",
+             "Eles são todos tipo fada"
+          ]
+        },
+        {
+          "image": "https://i2.wp.com/mundo-nipo.com/wp-content/uploads/2015/03/Kyuubi-no-Kitsune-obra-de-Utagawa-Kuniyoshi-Foto-Creative-Commons-900x600-min.jpg?fit=900%2C600&ssl=1",
+          "title": "Qual Pokémon é baseado em um kitsune do folclore japonês?",
+          "description": "",
+          "answer": 3,
+          "alternatives": [
+             "Arcanine",
+             "Fennekin",
+             "Pikachu",
+             "Ninetales"
+          ]
+        },
+        {
+          "image": "https://criticalhits.com.br/wp-content/uploads/2015/11/giphy-4.gif",
+          "title": "Em que ano foram os primeiros jogos Pokémon lançados no Japão?",
+          "description": "",
+          "answer": 0,
+          "alternatives": [
+             "1996",
+             "1998",
+             "2000",
+             "2001"
+          ]
         }
       ],
       "external": [
+        "https://aluraquiz-base.alura-challenges.vercel.app/",
         "https://aluraquizpokemon.cesarrobertopg.vercel.app/",
         "https://chessquiz-alura.leo0liveira.vercel.app/"
       ],

@@ -19,7 +19,7 @@ export async function getServerSideProps(context) {
         if (respostaDoServer.ok) {
           return respostaDoServer.json();
         }
-        throw new Error('Fala em pegar os dados');
+        throw new Error('Falha em pegar os dados');
       })
       .then(((respostaConvertidaEmObjeto) => respostaConvertidaEmObjeto))
       .catch((err) => {
